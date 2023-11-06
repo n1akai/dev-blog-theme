@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBlog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="font-['Poppins']">
+  <!-- Header -->
+  <header class="bg-white p-1 sm:p-0">
+    <div class="container mx-auto">
+      <div class="flex items-center text-black">
+        <h1 class="text-2xl font-bold grow text-red-400">DevBlog</h1>
+        <nav class="hidden items-center me-12 sm:flex">
+          <a class="py-3.5 px-2 bg-white duration-300 hover:bg-red-700 hover:text-white" href="">Home</a>
+          <a class="py-3.5 px-2 bg-white duration-300 hover:bg-red-700 hover:text-white" href="">Posts</a>
+          <a class="py-3.5 px-2 bg-white duration-300 hover:bg-red-700 hover:text-white" href="">Categories</a>
+          <a class="py-3.5 px-2 bg-white duration-300 hover:bg-red-700 hover:text-white" href="">About US</a>
+          <a class="py-3.5 px-2 bg-white duration-300 hover:bg-red-700 hover:text-white" href="">Contact US</a>
+        </nav>
+        <div class="hidden sm:flex">
+          <a class="p-2 duration-300 hover:text-red-700" href="#"><i class="fa-solid fa-user-plus"></i> Register</a>
+          <a class="p-2 duration-300 hover:text-red-700" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+        </div>
+        <div class="sm:hidden">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Single Post -->
+  <main class="p-4 bg-[#F7F7F7]">
+    <div class="container mx-auto">
+      <div class="text-center">
+        <div class="text-gray-500 pb-1">Published November 06, 2023</div>
+        <h1 class="text-3xl font-bold">Cum omnis aut omnis iste ex suscipit repellat.</h1>
+        <p class="p-3 mx-auto lg:w-[768px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit veniam animi eos quibusdam, unde doloribus, laborum id accusantium sit, ab saepe itaque. Voluptates distinctio repudiandae atque, alias porro quibusdam nulla.</p>
+      </div>
+      <div class="my-3 flex overflow-hidden justify-center items-center">
+        <img class="rounded-xl w-full max-h-full object-contain lg:w-[768px]" src="./assets/img/post_image.png" alt="">
+      </div>
+      <div class="lg:w-[700px] mx-auto">
+        <article class="text-lg">
+          Voluptatem eum quos et expedita et quia assumenda. Qui corrupti veniam cupiditate unde. Fugit omnis voluptas sit similique hic. Est molestiae quae rerum quis et dolor. Soluta quo ducimus nihil eius debitis. Est sunt vitae iure dolore cum totam ducimus. Quas est labore vitae. Earum ad recusandae magni. Vero laborum consequatur et qui eveniet. Adipisci adipisci omnis eius numquam quisquam distinctio dolorum. Ea voluptatem dolor ipsa laboriosam. Debitis quibusdam sint et a et natus voluptatum. Odit sunt ut enim ab quam maxime. Qui illo et recusandae non cupiditate magni. Est et qui suscipit quis est et est. Similique reprehenderit repellat a repellendus voluptas dolorem. Consequuntur iure magnam vero officia possimus. Qui et qui quia assumenda. Voluptatem error dolorem itaque earum veniam qui et quia. Non voluptatem consequuntur quo inventore natus. Commodi accusamus natus quia ut nam. Accusamus voluptatem vero quo repellat. Eius ipsum fugit placeat numquam. Ipsam aut modi dicta sit.
+        </article>
+        <div class="bg-gray-300 w-full h-[1px] my-6"></div>
+        <!-- Post Auhor -->
+        <div class="flex flex-col md:flex-row items-center flex-wrap">
+          <div class="w-[80px] h-[80px] rounded-[50%] overflow-hidden md:me-[10px]">
+            <img src="/assets/img/user.jpg" alt="">
+          </div>
+          <div class="md:w-[calc(100%-90px)]">
+            <p class="font-bold">Admin</p>
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur, modi sint voluptatem dignissimos tempora nostrum optio impedit rem quisquam perspiciatis repudiandae sapiente, quam magnam expedita! Voluptatibus voluptas quia repellendus!</p>
+          </div>
+        </div>
+        <div class="bg-gray-300 w-full h-[1px] my-6"></div>
+        <!-- Tags -->
+        <div class="flex">
+          <div class="me-2">Tags:</div>
+          <ul class="flex space-x-2 justify-center items-center">
+            <li><a class="p-1 bg-white border border-red-400 text-red-400 duration-300 hover:text-white hover:bg-red-700" href="#">DEV</a></li>
+            <li><a class="p-1 bg-white border border-red-400 text-red-400 duration-300 hover:text-white hover:bg-red-700" href="#">OOP</a></li>
+            <li><a class="p-1 bg-white border border-red-400 text-red-400 duration-300 hover:text-white hover:bg-red-700" href="#">JAVA</a></li>
+          </ul>
+        </div>
+        <div class="bg-gray-300 w-full h-[1px] my-6"></div>
+        <!-- Comments -->
+        <div>
+          <div class="mb-4">Comments(0)</div>
+          <form action="" method="post">
+            <textarea class="w-full resize-none outline-red-400 p-1" name="" id="" rows="10"></textarea>
+            <div class="flex justify-end mt-4">
+              <button class="bg-red-400 text-white p-2 border border-red-400 duration-300 hover:bg-red-700">Post Comment</button>
+            </div>
+          </form>
+        </div>
+        <div class="bg-gray-300 w-full h-[1px] my-6"></div>
+        <div class="flex flex-wrap">
+          <div class="bg-white rounded-lg w-full p-6">
+            <div class="flex flex-col md:flex-row items-center flex-wrap">
+              <div class="w-[70px] h-[70px] rounded-[50%] overflow-hidden md:me-[10px]">
+                <img src="/assets/img/user.jpg" alt="">
+              </div>
+              <div class="md:w-[calc(100%-80px)] flex items-center">
+                <div class="flex-grow">
+                  <p class="font-bold">Admin</p>
+                  <p class="text-sm text-gray-500">1 hour ago</p>
+                </div>
+                <div class="text-red-400 py-2 px-4 border border-red-400 rounded-full duration-300 cursor-pointer hover:bg-red-400 hover:text-white">
+                  <i class="fa-solid fa-heart"></i> 100
+                </div>
+              </div>
+              <div class="py-5 leading-6 text-[15px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo nobis rerum assumenda! Tempora laborum autem nostrum placeat vel similique, tempore, non magnam totam adipisci laboriosam deleniti dicta assumenda maiores cupiditate?
+              </div>
+              <div class="flex justify-end w-full space-x-2">
+                <button class="text-red-400 py-1 px-8 duration-300 hover:bg-red-700 hover:text-white">Delete</button>
+                <button class="bg-red-400 text-white py-1 px-8 border border-red-400 duration-300 hover:bg-red-700">Edit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-red-400">
+    <div class="p-8 flex justify-center items-center flex-col">
+      <div class="p-4">
+        <ul class="flex space-x-2 items-center">
+          <li><a class="flex justify-center items-center w-[35px] h-[35px] bg-white text-red-400 duration-300 hover:text-white hover:bg-red-700" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a class="flex justify-center items-center w-[35px] h-[35px] bg-white text-red-400 duration-300 hover:text-white hover:bg-red-700" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a class="flex justify-center items-center w-[35px] h-[35px] bg-white text-red-400 duration-300 hover:text-white hover:bg-red-700" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="text-white">
+        <ul class="flex">
+          <li><a href="#">Terms of Use</a></li>
+          <li class="mx-1">-</li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="text-white">&copy; 2023 - ABOULHODA SAAD</div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</body>
+
+</html>
